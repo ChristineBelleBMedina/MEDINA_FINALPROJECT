@@ -29,11 +29,6 @@
     font-weight: 600;
 }
 
-span{
-    color:rgb(35, 150, 35);
-    text-shadow: 2px 2px black;
-
-}
 
 .nav-bar p{
     position: absolute;
@@ -65,8 +60,11 @@ span{
 .menu li a:hover{
     color:green;
     padding: 10px 20px;
-    border: 2px solid #fff;
+    border: 5px solid transparent;
+    border-image: url(images/hazardborder.jpg) 40 round;
 }
+
+
 
 .h{
  
@@ -76,7 +74,6 @@ span{
     margin-right:auto;
     margin-left: auto;
     margin-top: 20px;
-    margin-bottom: 0px;
     background-color:#fff;
 }
 
@@ -86,12 +83,19 @@ span{
 
 }
 
+article {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 25px;
+    font-size: 55px;
+    color:#fff;
+    font-weight: 600;
+}
+
 .title-1{
     text-align:center;
-    margin-top: 20px;
-    margin-left: 25px;
-    font-size: 40px;
-    color:#fff;
+    font-size: 35px;
+    color:white;
     font-weight: 600;
 }
 
@@ -101,17 +105,27 @@ span{
     margin: 50px;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/poverty1.jpg);
     background-size: cover;
-
-
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
-
+.grr:hover{
+    transform:translateY(-10px);
+}
 .hatdog {
     position:relative;
-    top: 0.3em;
+    top:0.3em;
     text-align:center;
     font-size: 80px;
     font-family: Arial, Helvetica, sans-serif;
     color:#fff;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
+}
+.hatdog:hover{
+    transform:translateY(-10px);
 }
 
 h3 {
@@ -127,6 +141,13 @@ h3 {
     margin: 50px;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/effects1.jpg);
     background-size: cover;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
+}
+.brr:hover{
+    transform:translateY(-10px);
 }
 
 .yuh {
@@ -136,6 +157,13 @@ h3 {
     font-size: 80px;
     font-family: Arial, Helvetica, sans-serif;
     color:#fff;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
+}
+.yuh:hover{
+    transform: translateY(-10px);
 }
 
 h3 {
@@ -151,8 +179,14 @@ h3 {
     margin: 50px;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/prevention1.jpg);
     background-size: cover;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
 }
-
+.raa:hover{
+    transform: translateY(-10px);
+}
 .nuh {
     position:relative;
     top: 0.3em;
@@ -160,8 +194,15 @@ h3 {
     font-size: 80px;
     font-family: Arial, Helvetica, sans-serif;
     color:#fff;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
 }
 
+.nuh:hover{
+    transform: translateY(-10px);
+}
 h3 {
     position:relative;
     top: 1em;
@@ -170,7 +211,7 @@ h3 {
     text-shadow: 2px 2px black;
 }
 
-.outer-footer{
+footer{
     padding:10px;
     text-align: center;
     color:#fff;
@@ -180,6 +221,50 @@ h3 {
     font-family: Arial, Helvetica, sans-serif;
     text-shadow: 2px 2px black;
 }
+p:hover{
+    color:yellow;
+}
+span{
+    color:green;
+    
+}
+
+.footer-sprites {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Space between icons */
+  }
+ 
+.fb{
+	background: url(images/set-of-social-media-icons-editable-vector-free-png.webp) no-repeat -30px -23px;
+	width: 46px;
+	height: 46px;
+}
+
+.ig{background: url(images/set-of-social-media-icons-editable-vector-free-png.webp) no-repeat -139px -23px;
+        width: 45px;
+        height: 46px;
+    }
+
+.idk{
+        background: url(images/set-of-social-media-icons-editable-vector-free-png.webp) no-repeat -85px -131px;
+        width: 45px;
+        height: 46px;
+    }
+.animation-sprite{
+    float:left;
+    width: 150px;
+    height: 190px;
+    background: url(images/medine-removebg-preview.png) no-repeat 0px 0px;
+    animation: varName 2s steps(8) infinite;
+
+}
+
+@keyframes varName {
+    from {background-position-x: 612px;}
+    to{background-position-x: -408px};
+}
+
 
 
 /*about*/
@@ -191,22 +276,28 @@ h3 {
 }
 
 .tt2{
-    text-align: center;
     margin-top: 0px;
+    text-align:center;
     margin-left: 25px;
-    font-size: 75px;
+    font-size: 70px;
     color:#fff;
     font-weight: 600;
 }
 
 h2 {
-     text-align: center;
-    margin-top: 10px;
-    margin-left: 25px;
-    font-size: 25px;
+
+    text-align: center;
+    margin-left: 20px;
+    font-size: 22px;
     color:#fff;
     font-weight: 600;
+
 }
+video{
+   float:right;
+   width: 450px;
+}
+
 
 .tt3 {
     width: 150;
@@ -214,6 +305,7 @@ h2 {
     margin: 50px;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/end.jpg);
     background-size: cover;
+    transform:skewX(20deg);
 }
 
 .tt4 {
@@ -222,6 +314,7 @@ h2 {
     margin: 50px;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/poverty-campaign-ap-img.jpg);
     background-size: cover;
+    transform:skewX(-20deg);
 }
 
 
@@ -231,6 +324,13 @@ h2 {
     margin: 50px;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/fight-poverty-not-poor.jpg);
     background-size: cover;
+    transform:skewX(20deg);
+    
+}
+
+video[src$=".mp4"] {
+    border: 5px solid green;
+    padding: 10px;
 }
 
 
@@ -244,7 +344,7 @@ h2 {
 
 .fe1{
     text-align: center;
-    margin-top: 5px;
+    margin-top: 0px;
     margin-left: 45px;
     font-size: 70px;
     color:#fff;
@@ -252,9 +352,8 @@ h2 {
 }
 
 h6 {
-     text-align: center;
-    margin-top: 10px;
-    margin-left: 25px;
+    text-align: center;
+    margin-top: 5px;
     font-size: 32px;
     color:#fff;
     font-weight: 600;
@@ -265,10 +364,18 @@ h6 {
     width: 100;
     height: 300px;
     margin: 50px;
+    margin-top:1px;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/mental.jpg);
     background-size: cover;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
 }
 
+.ef2:hover{
+    transform:translateY(-10px);
+}
 .fe2 {
     position:relative;
     top: 0.3em;
@@ -276,8 +383,15 @@ h6 {
     font-size: 80px;
     font-family: Arial, Helvetica, sans-serif;
     color:#fff;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
 }
 
+.fe2:hover{
+    transform:translateY(-10px);
+}
 h4 {
     position:relative;
     top: 1em;
@@ -293,6 +407,14 @@ h4 {
     margin: 50px;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/physicakl.jpg);
     background-size: cover;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
+}
+
+.ef3:hover{
+    transform:translateY(-10px);
 }
 
 .fe3 {
@@ -302,6 +424,13 @@ h4 {
     font-size: 80px;
     font-family: Arial, Helvetica, sans-serif;
     color:#fff;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
+}
+.fe3:hover{
+    transform:translateY(-10px);
 }
 
 h4 {
@@ -321,6 +450,14 @@ h4 {
     margin: 50px;
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(images/poverty-and-education_opt-1.jpg);
     background-size: cover;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
+}
+
+.ef4:hover{
+    transform:translateY(-10px);
 }
 
 .fe4 {
@@ -330,6 +467,14 @@ h4 {
     font-size: 75px;
     font-family: Arial, Helvetica, sans-serif;
     color:#fff;
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    
+}
+
+.fe4:hover{
+    transform:translateY(-10px);
 }
 
 h4 {
@@ -342,6 +487,11 @@ h4 {
     font-size: 25px;
     text-decoration: underline;
     text-shadow: 2px 2px black;
+}
+
+h6:last-of-type {
+    border: 3px solid green;
+    padding: 10px;
 }
 
 /*prevention*/
