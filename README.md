@@ -1,5 +1,3 @@
-# MEDINA_FINALPROJECT
-This is a laboratory activity on Modules 1, 2, 3, 4, 5.
+The quiz is integrated in the About Webpage. It is all about a quiz about poverty wherein it consists simple questions that you can just answer easily. The quiz consists of 5 multiple-choice questions with 4 choices. Choose the best answer. 
 
-- The topics covered in this activity were HTML Basics, Web Designing and Layout, CSS.
-- https://github.com/ChristineBelleBMedina/MEDINA_FINALPROJECT
+Note: you can always go back to the previous questions. Have fun!
