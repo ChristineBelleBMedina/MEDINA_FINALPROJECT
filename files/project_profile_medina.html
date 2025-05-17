@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>POWER-TY</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+  <header>
+    <br>
+    <h1>YOUR PROFILE:</h1>
+  </header>
+
+  <br><br>
+
+    <div class="profile">
+      <h2>First Name: <span id="FirstName"></span></h2>
+      <h2>Last Name: <span id="LastName"></span></h2>
+      <h2>Email Address: <span id="Email"></span></h2>
+      <h2>Sex: <span id="Sex"></span></h2>
+      <h2>Why I support this campaign: <span id="Answer"></span></h2>
+    </div>
+ 
+
+  <script>
+   
+    document.getElementById("FirstName").innerText = localStorage.getItem("firstName");
+    document.getElementById("LastName").innerText = localStorage.getItem("lastName");
+    document.getElementById("Email").innerText = localStorage.getItem("email");
+    document.getElementById("Answer").innerText = localStorage.getItem("answer");
+    document.getElementById("Sex").innerText = localStorage.getItem("sex");
+
+  </script>
+</body>
+</html>
