@@ -1,3 +1,3 @@
-The quiz is all about poverty wherein it consists of simple questions that you can just answer easily. It is integrated in the "About" webpage of the website, wherein it can be seen down below the webpage. The quiz consists of 5 multiple-choice questions with 4 choices each question. Choose the best answer. 
+This is my final project for the fourth quarter. This consists of modules from 1-14.
 
-Note: you can always go back to the previous questions. Have fun!
+
